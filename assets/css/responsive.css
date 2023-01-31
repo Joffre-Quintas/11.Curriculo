@@ -55,6 +55,9 @@
     .container{
         width: 100%;
     }
+    .container > * {
+        margin-top: 10rem;
+    }
     main > div {
         display: flex;
         flex-direction: column;
