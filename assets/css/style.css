@@ -145,7 +145,7 @@ section > h2::after {
     
 }
 .soft_skills_list > div,.hard_skills_list > div {
-    padding: 4rem 2rem;
+    padding: 1rem 1rem;
 }
 .icons_style{
     color: #f7a21b;
