@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font-body:'Poppins', sans-serif;
+    --principal-title:'Roboto Mono', monospace;
+    --color-white: white;
+    --color-cinza-escuro:#15191d;
+    --color-cinza-escuro-menos:#333333;
+    --color-cinza-claro:#4b538b;
+    --color-blue-emphasis: #f7a21b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-white);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-cinza-escuro);
+    font-family: var(--font-body);
+}
+hr{
+    margin: 4rem auto;
+    width: 100%;
+}
+header{
+    height: 5rem;
+    width: 100%;
+    background-color: var(--color-cinza-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 1;
+}
+header > img{
+    margin-left: 2rem;
+}
+header > nav{
+    margin-right: 2rem;
+}
+.navigator{
+    display: flex;
+    gap: 1.5rem;
+}
+.navigator_itens > a {
+    color: var(--color-blue-emphasis);
+    transition: 0.3s;
+    font-size: 1.3rem;
+}
+.navigator_itens > a:hover{
+    color: var(--color-white);
+}
+.shadow_header{
+    height: 5rem;
+}
+.menu_responsive {
+position: absolute;
+}
+/* Header termina aqui */
+
+/* Main */
+.container{
+    width: 80%;
+    margin: 0px auto;
+    padding: 2rem;
+}
+.container > *{
+    margin: 3rem auto;
+}
+.principal_text{
+    font-family: var(--principal-title);
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+.principal_text::after{
+    content: "|";
+    color: var(--color-blue-emphasis);
+    opacity: 1;
+    animation: blink 0.75s infinite;
+    display: inline;
+}
+@keyframes blink {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+.principal_text > span{
+    color: var(--color-blue-emphasis);
+    font-style: italic;
+    background-color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+main{
+    margin: 0px auto;   
+}
+.principal_picture{
+    width: 50%;
+    height: 50%;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50%;
+}
+main > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+main > p {
+    margin-top: 2rem;
+    text-indent: 1.5rem;
+}
+.div_principal_text{
+    width: 40%;
+}
+/*End Main */
+
+/* Soft Skills */
+section > h2::after {
+    content: "";
+    width: 20px;
+    height: 0.25rem;
+    background-color: var(--color-blue-emphasis);
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 0px 10px 10px 0px;
+}
+.soft_skills_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7rem;
+    text-align: center;
+    
+}
+.icons_style{
+    color: #f7a21b;
+}
+/*End Soft Skills */
+/* Hard Skills */
+.hard_skills_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.input_range{
+    width: 80%;    
+}
+/*End Hard Skills */
+
+/* Portifolio */
+.materials{
+    width: 100%;
+}
+.materials_itens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+.building{
+    width: 500px;
+    height: 600px;
+    background-color: #f7a21b;
+    scale: 0.7;
+    position: relative;
+    cursor: pointer;
+    
+}
+.text_building{
+    font-size: 3.5rem;
+    transform: rotate(-45deg);  
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 10%;
+    animation: textGrow 1s infinite;
+}
+
+@keyframes textGrow {
+    0%,100%{
+        scale: 1.1;
+    }
+    50%{
+        scale: 0.9;
+    }
+}
+/* End Portifolio */
+footer{
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    font-size: 0.8rem;
+}
+
+
+
+
+

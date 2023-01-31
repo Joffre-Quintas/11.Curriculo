@@ -1,0 +1,85 @@
+/* Responsive */
+/* Small Phone */
+@media (width <=660px) {
+    /* General */
+
+    hr{
+        margin: 2rem auto;
+    }
+    /* Header */
+    .navigator{
+        display: none;
+    }
+
+    /* Main */
+    .container{
+        width: 100%;
+    }
+    main > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .principal_picture{
+        width: 80%;
+    }
+    .div_principal_text{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .principal_text{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    /* Soft SKills */
+    .soft_skills_list{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Hard SKills */
+    /* Portifólio */
+    .building{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (width <=768px) {
+    /* General */
+
+    hr{
+        margin: 2rem auto;
+    }
+    /* Header */
+    .navigator_itens > a {
+        font-size: 1.1rem;
+    }
+
+    /* Main */
+    .container{
+        width: 100%;
+    }
+    main > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .principal_picture{
+        width: 80%;
+    }
+    .div_principal_text{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .principal_text{
+        font-size: 1.2rem;
+    }
+    /* Soft SKills */
+    .soft_skills_list{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Hard SKills */
+    /* Portifólio */
+    .building{
+        display: none;
+    }
+}
