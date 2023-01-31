@@ -144,6 +144,9 @@ section > h2::after {
     text-align: center;
     
 }
+.soft_skills_list > div,.hard_skills_list > div {
+    padding: 4rem 2rem;
+}
 .icons_style{
     color: #f7a21b;
 }

@@ -2,10 +2,6 @@
 /* Small Phone */
 @media (width <=660px) {
     /* General */
-
-    hr{
-        margin: 2rem auto;
-    }
     /* Header */
     .navigator{
         display: none;
@@ -45,10 +41,6 @@
 /* Tablet */
 @media (width <=768px) {
     /* General */
-
-    hr{
-        margin: 2rem auto;
-    }
     /* Header */
     .navigator_itens > a {
         font-size: 1.1rem;
